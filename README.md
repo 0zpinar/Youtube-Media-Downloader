@@ -1,22 +1,17 @@
 Important:
 Before running the application, please make sure to:
 
-    Open PowerShell as a normal user and run the following command to enable script execution:
+Open PowerShell as a normal user and run the following command to enable script execution:
 
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
-    In your Electron project files, make sure to import the necessary libraries at the top of your main script file like this:
+In your Electron project files, make sure to import the necessary libraries at the top of your main script file like this:
 
-const { app, BrowserWindow, ipcMain, Menu } = require("electron");
-const { exec } = require("child_process");
-const path = require("path");
+    const { app, BrowserWindow, ipcMain, Menu } = require("electron");
+    const { exec } = require("child_process");
+    const path = require("path");
 
 This will ensure the application has the required permissions and dependencies to run properly.
-
-
-
-
-
 
 Notice and Disclaimer:
 

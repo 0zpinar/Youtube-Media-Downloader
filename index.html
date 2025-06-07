@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Media Downloader</title>
+    <link rel="stylesheet" href="index.css" />
+    <script>
+      console.log(__dirname);
+      console.log(process.env);
+    </script>
+  </head>
+  <body>
+    <h1>Youtube Media Downloader</h1>
+    <div>
+      <form>
+        <p class="URL">
+          URL: <input type="url" class="Bar" id="urlInput" />
+          <select name="format" class="Secenek" id="formatSelect">
+            <option>MP3</option>
+            <option>M4A</option>
+            <option>AAC</option>
+            <option>FLAC</option>
+            <option>WAV</option>
+            <option>OPUS</option>
+            <option>VORBIS</option>
+            <option>ALAC</option>
+          </select>
+          <div class="Download">
+          <button type="button" class="Button" id="button">Download</button>
+          </div>
+        </p>
+      </form>
+      <script src="renderer.js"></script>
+    </div>
+  </body>
+</html>
